@@ -1,0 +1,28 @@
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRG91YmxlbGF5ZXIiLCJpYXQiOjE1NzAxMjQ0MjUsImV4cCI6MTU3MDEyNDQ0MH0.n98I8bmUg6TwLxnkrv7sNYJRtu80oaSaH0eKoNuBlNY
+
+###
+
+DELETE  http://localhost:4000/logout
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRG91YmxlbGF5ZXIiLCJpYXQiOjE1NzAxMjQ2NzF9.Riev1JqAu6-t8wYB3gxmwHf2ihssCGA_rPKuA2efw_c"
+}
+
+###
+
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+    "username" : "Doublelayer"
+}
+###
+
+POST http://localhost:4000/token
+Content-Type: application/json
+
+{
+    "token" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRG91YmxlbGF5ZXIiLCJpYXQiOjE1NzAxMjQ2NzF9.Riev1JqAu6-t8wYB3gxmwHf2ihssCGA_rPKuA2efw_c"
+}
