@@ -2,7 +2,7 @@
 
 🧠 Concepts Covered:
 
-- microservice architecture (one for authenticate & one for get data)
+- microservice architecture (one for authenticate & one for getting the data)
 - Creating Node.js authentication middleware
 - Using refresh tokens with JWT
 - Authenticating users with JWT
@@ -21,7 +21,7 @@
 
   - Dotenv is a zero-dependency module that loads environment variables from a `.env` file into `process.env`
 
-  #### Development utilities:
+#### Development utilities:
 
 - [nodemon](https://www.npmjs.com/package/nodemon)
   - nodemon is a tool that helps develop node.js based applications by automatically restarting the node application when file changes in the directory are detected.
@@ -36,6 +36,8 @@ npm install
 npm run devStart && npm run devStartAuth
 ```
 
+---
+
 #### Usage of requests.rest file (xcode required)
 
 - install "REST Client"
@@ -45,6 +47,8 @@ npm run devStart && npm run devStartAuth
     Version: 0.22.2
     Publisher: Huachao Mao
     VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=humao.rest-client
+
+---
 
 #### Usage of .env
 
