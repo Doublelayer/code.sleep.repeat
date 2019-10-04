@@ -1,0 +1,76 @@
+body,
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+svg {
+  height: 80vh;
+}
+
+.st0 {
+  fill: #29ea90;
+}
+.st1 {
+  fill: #22b562;
+}
+.st2 {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 6;
+  stroke-miterlimit: 10;
+}
+.st3 {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+.st4 {
+  display: none;
+}
+.st5 {
+  display: inline;
+  fill: #ffffff;
+}
+.st6 {
+  fill: #ffdf54;
+}
+.st7 {
+  fill: #e2af13;
+}
+.st8 {
+  fill: #ffffff;
+}
+.st9 {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+
+/* Animation */
+
+svg #line {
+  animation-duration: 3.25s;
+  animation-name: animateLine;
+  animation-direction: alternate;
+}
+
+@keyframes animateLine {
+  from {
+    width: 0;
+  }
+  to {
+    width: 500px;
+  }
+}
