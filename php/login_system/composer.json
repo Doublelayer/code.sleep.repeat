@@ -1,0 +1,21 @@
+{
+  "name": "penguindigital/scratchpad",
+  "require": {
+    "symfony/var-dumper": "^4.2",
+    "vlucas/phpdotenv": "^3.6"
+  },
+  "authors": [
+    {
+      "name": "Mark Twigg",
+      "email": "mark@penguindigital.co.uk"
+    }
+  ],
+  "require-dev": {
+    "filp/whoops": "2.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Scratchpad\\":"src/"
+    }
+  }
+}

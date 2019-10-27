@@ -1,0 +1,1 @@
+<a href="create_img.php">#1. Create Image first</a>
