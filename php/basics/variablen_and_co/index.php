@@ -7,10 +7,22 @@
     <title>Data Types</title>
 </head>
 <body>
+    <h1>Es gibt folgende Daten-Typen:</h1>
+    <ul>
+        <li>String</li>
+        <li>Integer</li>
+        <li>Float (floating point numbers - also called double)</li>
+        <li>Boolean</li>
+        <li>Object</li>
+        <li>NULL</li>
+        <li>Resource</li>
+    </ul>
+
     <?php
         function newLine(){
             echo "<br/>";
         }
+
 
         # String
         # Integer
