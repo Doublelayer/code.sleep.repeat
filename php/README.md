@@ -11,17 +11,15 @@
 ## Setup (Windows) => apache server or other requierd!
 
 #### Download latest version
-```
-[thread safe](https://www.php.net/downloads.php)
-```
+- Download: [latest version => thread safe](https://www.php.net/downloads.php)
 - [ ] extract zip and move to c:
 - [ ] rename php.ini-development to php.ini
 - [ ] edit enviroment variables: Path => C:/php
 - [ ] open command prompt and type: php -version
 - [ ] open the file c:\Apache24\conf\httpd.conf and append it with lines:
-	  PHPIniDir "C:/php7"
-	  AddHandler application/x-httpd-php .php
-	  LoadModule php7_module "C:/php7/php7apache2_4.dll"
+	- PHPIniDir "C:/php7"
+	- AddHandler application/x-httpd-php .php
+	- LoadModule php7_module "C:/php7/php7apache2_4.dll"
 - [ ] now restart apache server
 - [ ] create file "info.php" in C:/Apache34/htdocs/
 - [ ] open file and write and save: <?php phpinfo() ?> 
@@ -34,7 +32,7 @@
 
 ## Anbindung/Kennzeichnung
 - Dateiendung => .php
-- <?php ... ?>
+- <\?php ... ?>
 - <script language="php"> ... </script>
 - <? ?> (seit php 5 nicht mehr verfügbar)
 - <% %> (seit php 5 nicht mehr verfügbar)
@@ -58,7 +56,7 @@
 
 ## Schlüsselwörter
 	abstract     | and        | array()
-	as 	         | break      | case
+	as 	     | break      | case
 	catch 	     | cfuntion   | class
 	clone 	     | const      | continue
 	declare      | default    | do
@@ -69,30 +67,34 @@
 	funtion      | global     | goto
 	if           | implements | interface
 	instanceof   | namespace  | new
-	old_function | or	      | private
+	old_function | or	  | private
 	protected    | public     | static
 	switch       | throw      | try
-	use	         | var        | while
+	use	     | var	  | while
 
 ## Basis Konzept OOP
-	Kapselung	        | Eigenschaften, Methoden und Ereignisse eines realen Objektes werden zu Klassen zusammengefasst.
-			              Konkrete Ausprägungen einer Klasse sind Objekte
+	Kapselung	    | Eigenschaften, Methoden und Ereignisse eines realen Objektes werden zu Klassen zusammengefasst.
+			      Konkrete Ausprägungen einer Klasse sind Objekte
+				  
 	Geheimnisprinzip    | Von außen erreicht man nur die Informationen, die zur Anwendung notwendig sind. 
-			              Ein Beispiel: Objekte der Klasse Auto verfügen über die Methode Bremsen.
-			              Für einen Benutzer ist es nicht von Interesse wie der Bremsvorgang umgesetzt wurde.
+			      Ein Beispiel: Objekte der Klasse Auto verfügen über die Methode Bremsen.
+			      Für einen Benutzer ist es nicht von Interesse wie der Bremsvorgang umgesetzt wurde.
+			      
 	Sichtbarkeit	    | Klassen und ihre Eigenschaften und Methoden könnnen unterschiedliche Sichtbarkeiten aufweisen.
-			              Damit wird angegeben, welche Elemente eines Objekts für ander Ojekte sichtbar sind.
-			              Die beiden Extreme lauten: private (das Element ist nur innerhalb der Klasse sichtbar)
-						  public  (das Element ist für alle anderen Objekte sichtbar)
-	Vererbung	        | Mithilfe der Vererbung können Eigenschaften und Methoden einer übergeordneten Klasse auf
-			              nachgelagerte Klassen vererbt werden. Die Zuordnungen zu Ober- und Unterklassen folgen
-			              dabei den Prizipien von Generalisierung und Spezialisierung
-	Polymorphie	        | Objekte verschiedener Klassen müssen gelegentlich gleiche Funktionen ausführen. 
-			              Beispielsweise müssen alle motorgetriebenen Fahrzeug betankt werden. Dazu wird in der abstrakten
-			              Klasse "Fahrzeug" die Methode "Tanken" definiert. Von abstrakten Klassen können keine Objekte
-			              erzeugt werden. Sie dienen nur als Platzhalter gemeinsamer Eigenschaften.
-			              In den Unterklassen "PKW" und "LKW" muss jeweils die Methode "Tanken" konkretisierend definiert werden.
-			              D.h. ein PKW wird mittels Benzin und ein LKW mittel Diesel betankt.
+			      Damit wird angegeben, welche Elemente eines Objekts für ander Ojekte sichtbar sind.
+			      Die beiden Extreme lauten: private (das Element ist nur innerhalb der Klasse sichtbar)
+			      public  (das Element ist für alle anderen Objekte sichtbar)
+			      
+	Vererbung	    | Mithilfe der Vererbung können Eigenschaften und Methoden einer übergeordneten Klasse auf
+			      nachgelagerte Klassen vererbt werden. Die Zuordnungen zu Ober- und Unterklassen folgen
+			      dabei den Prizipien von Generalisierung und Spezialisierung
+			      
+	Polymorphie	    | Objekte verschiedener Klassen müssen gelegentlich gleiche Funktionen ausführen. 
+			      Beispielsweise müssen alle motorgetriebenen Fahrzeug betankt werden. Dazu wird in der abstrakten
+			      Klasse "Fahrzeug" die Methode "Tanken" definiert. Von abstrakten Klassen können keine Objekte
+			      erzeugt werden. Sie dienen nur als Platzhalter gemeinsamer Eigenschaften.
+			      In den Unterklassen "PKW" und "LKW" muss jeweils die Methode "Tanken" konkretisierend definiert werden.
+			      D.h. ein PKW wird mittels Benzin und ein LKW mittel Diesel betankt.
 
 ## OOP
 - Zugriffskontrolle: public, private, protected
@@ -230,16 +232,16 @@ if($x > 10) {
 	- Perl und C
 
 4) Wofür steht PEAR / PECL?
-	PECL:
-	  => PHP Extension Community Library
-	  => written in C
-	  => stellt zusätzliche Funktionallitäten für php zur Verfügung
-	  => es werden Adminrechte benötigt um C-Compiler zu installieren
-	PEAR:
-	  => PHP Extension and Application Repository
-	  => Libraries und Code
-	  => in PHP geschrieben
-	  => Framework und Distributionsysstem für wiederverwendbare PHP-Komponenten
+	- PECL:
+	  - PHP Extension Community Library
+	  - written in C
+	  - stellt zusätzliche Funktionallitäten für php zur Verfügung
+	  - es werden Adminrechte benötigt um C-Compiler zu installieren
+	- PEAR:
+	  - PHP Extension and Application Repository
+	  - Libraries und Code
+	  - in PHP geschrieben
+	  - Framework und Distributionsysstem für wiederverwendbare PHP-Komponenten
 
 5) Was ist die aktuellste Version von PHP
 	- 7.1
@@ -267,11 +269,11 @@ if($x > 10) {
 	- Nur einfach Vererbung mit "extends" ist möglich
 
 12 ) Was bedeuted es wenn eine Klasse oder eine Methode als "final" deklariert ist?
-	Klasse:
-		- Wenn eine Klasse als "final" deklariert ist kann von dieser keine weitere abgeleitet werden
-	Methoden:
-		- Wenn eine Methode als "final" deklariert ist, kann diese nicht überschrieben werden
-		- final Metoden können auch nicht überladen werden
+- Klasse:
+	- Wenn eine Klasse als "final" deklariert ist kann von dieser keine weitere abgeleitet werden
+- Methoden:
+	- Wenn eine Methode als "final" deklariert ist, kann diese nicht überschrieben werden
+	- final Metoden können auch nicht überladen werden
 
 13) Wie erfolgt der Vergleich von Objekten in PHP?
 	- mit dem "==" operator kann verglichen werden ob zwei objekte aus der selbem Klasse instanziert sind und
