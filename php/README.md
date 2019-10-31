@@ -226,6 +226,8 @@ if($x > 10) {
 - size => Länge des Feldes in Zeichen => optional
 - maxlength => maximal zulässige Anzahl der Zeichen => optional
 
+---
+
 ## 100 PHP Interview Fragen
 
 
@@ -261,12 +263,12 @@ if($x > 10) {
 	- php -a
 
 8) Was ist die richtige und am häufigsten Verwende Syntax um PHP-Code auszuführen?
-	- <?php ... ?>
-	- <? ... ?>
+	- <\?php ... ?>
+	- <\? ... ?>
 
 9) Wie kann direkt (ohne echo) im Browser ausgegeben werden?
-	- <?= ... ?>
-	- <?= $_SERVER['PHP_SELF'] ?>
+	- <\?= ... ?>
+	- <\?= $_SERVER['PHP_SELF'] ?>
 
 10) Was ist der größte Unterschiede zwischen PHP 4 und PHP 5?
 	- PHP 5 stellt mehr OOP Features zur Verfügung
