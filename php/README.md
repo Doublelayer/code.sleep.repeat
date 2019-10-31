@@ -34,7 +34,7 @@
 - Dateiendung => .php
 - <\?php ... ?>
 - <script language="php"> ... </script>
-- <? ?> (seit php 5 nicht mehr verfügbar)
+- <\? \?> (seit php 5 nicht mehr verfügbar)
 - <% %> (seit php 5 nicht mehr verfügbar)
 
 ## Sprachmerkmal
