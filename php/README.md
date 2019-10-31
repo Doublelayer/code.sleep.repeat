@@ -4,7 +4,7 @@
 
 - PHP erzeugt benötigten HTML-Code während der Laufzeit des Webprogramms. 
   Daher wird PHP als dynamisch bezeichnet.
-- objektorientierte Merkmal gab es erstmals in php4
+- objektorientierte Merkmale gab es erstmals in php4
 - objektorientierte Entwicklung seit php5 möglich
 - php ist ohne html nicht möglich
 
@@ -96,7 +96,7 @@
 			      In den Unterklassen "PKW" und "LKW" muss jeweils die Methode "Tanken" konkretisierend definiert werden.
 			      D.h. ein PKW wird mittels Benzin und ein LKW mittel Diesel betankt.
 
-## OOP
+## OOP - PHP
 - Zugriffskontrolle: public, private, protected
 - Objektübergabe an Funktion als Referenz oder als Wert mit "clone()"
 - Wertübergabe an Funktion als Kopie
@@ -114,9 +114,16 @@
 
 ## Sichtbarkeiten
 
-- public        wird vererbt | kann jederzeit vom objekt aufgerufen werden, obleich vater- oder kind klasse
-- protected     wird vererbt | kann NICHT direkt vom Objekt aufgerufen werden | Zugriff über Hilfsmethoden (getter, setter)
-- private       wird NICHT vererbt | Zugriff kann nur innerhalb der Klasse erfolgen, nicht vom Objekt selbst
+- public
+	- wird vererbt
+	- kann jederzeit vom objekt aufgerufen werden, obleich vater- oder kind klasse
+- protected
+	- wird vererbt
+	- kann NICHT direkt vom Objekt aufgerufen werden
+	- Zugriff über Hilfsmethoden (getter, setter)
+- private
+	- wird NICHT vererbt
+	- Zugriff kann nur innerhalb der Klasse erfolgen, nicht vom Objekt selbst
 
 ## Statische Eigenschaften
 - werden mit static deklariert
