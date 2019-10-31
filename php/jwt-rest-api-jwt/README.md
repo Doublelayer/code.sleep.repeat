@@ -13,5 +13,5 @@
   - Architecture for creating RESTful web services
   - http://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm
 
-- Tool
+- Tools
   - Postman (standalone)
