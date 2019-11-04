@@ -67,11 +67,15 @@ gulp.task("js", () => {
 });
 
 // ####################################################
-// WATCH
-gulp.task("default", () => {
-  browserSync.init({
-    server: "./dist"
+gulp.task("browser-sync", () => {
+  browserSync.init(null, {
+    server: {
+      baseDir: dist
+    }
   });
+});
+
+gulp.task("default", ["browser-sync"], () => {
   gulp.watch([src + "*.html"], ["html"]);
   gulp.watch([src + "assets/sass/*.sass"], ["sass"]);
   gulp.watch([src + "assets/js/*.js"], ["js"]);
