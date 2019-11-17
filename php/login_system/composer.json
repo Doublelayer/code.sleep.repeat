@@ -1,21 +1,22 @@
 {
-  "name": "penguindigital/scratchpad",
+  "name": "login/system",
   "require": {
     "symfony/var-dumper": "^4.2",
     "vlucas/phpdotenv": "^3.6"
   },
   "authors": [
     {
-      "name": "Mark Twigg",
-      "email": "mark@penguindigital.co.uk"
+      "name": "Doublelayer",
+      "email": "doublelayer@github.com"
     }
   ],
   "require-dev": {
-    "filp/whoops": "2.*"
+    "filp/whoops": "2.*",
+    "phpunit/phpunit": "8"
   },
   "autoload": {
     "psr-4": {
-      "Scratchpad\\":"src/"
+      "Scratchpad\\": "src/"
     }
   }
 }

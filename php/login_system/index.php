@@ -1,8 +1,6 @@
 <?php
-    include("logger.php");
+require_once("core/Init.php");
 
-    ini_set("display_errors", "1");
-    ini_set("display_startup_errors", "1");
-    error_reporting(E_ALL);
 
+DB_Manager::getInstance()->query("SELECT usernme FROM users WHERE username = :name", array(":name" => "flo"));
 ?>
