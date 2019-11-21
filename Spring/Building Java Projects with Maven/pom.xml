@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.springframework</groupId>
+    <artifactId>gs-maven</artifactId>
+    <packaging>jar</packaging>
+    <version>0.1.0</version>
+
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>2.1</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                        <configuration>
+                            <transformers>
+                                <transformer
+                                    implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                    <mainClass>hello.HelloWorld</mainClass>
+                                </transformer>
+                            </transformers>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+<!-- 
+With the exception of the optional <packaging> element, this is the simplest possible pom.xml file necessary to build a Java project. It includes the following details of the project configuration:
+
+<modelVersion>. POM model version (always 4.0.0).
+<groupId>.      Group or organization that the project belongs to. Often expressed as an inverted domain name.
+<artifactId>.   Name to be given to the project’s library artifact (for example, the name of its JAR or WAR file).
+<version>.      Version of the project that is being built.
+<packaging> -   How the project should be packaged. Defaults to "jar" for JAR file packaging. Use "war" for WAR file packaging. 
+-->
+
+    <dependencies>
+    
+		<dependency>
+			<groupId>joda-time</groupId>
+			<artifactId>joda-time</artifactId>
+			<version>2.9.2</version>
+		</dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+
+<!-- 
+This block of XML declares a list of dependencies for the project. Specifically, it declares a single dependency for the Joda Time library. Within the <dependency> element, the dependency coordinates are defined by three sub-elements:
+
+<groupId>       - The group or organization that the dependency belongs to.
+<artifactId>    - The library that is required.
+<version>       - The specific version of the library that is required. 
+-->
+</project>
+
