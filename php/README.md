@@ -7,6 +7,8 @@
 - objektorientierte Merkmale gab es erstmals in php4
 - objektorientierte Entwicklung seit php5 möglich
 - php ist ohne html nicht möglich
+- [100 Interview Questions](https://www.guru99.com/php-interview-questions-answers.html)
+- [Wikibook - php ](https://de.wikibooks.org/wiki/Websiteentwicklung:_PHP)
 
 ## Setup (Windows) => apache server or other requierd!
 
