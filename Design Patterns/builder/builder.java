@@ -1,4 +1,6 @@
-public class TestBuilderPattern {
+package builder;
+
+class TestBuilderPattern {
 
     public static void main(String[] args) {
         // Using builder to get the object in a single line of code and
@@ -9,7 +11,7 @@ public class TestBuilderPattern {
 
 }
 
-public class Computer {
+class Computer {
 
     // required parameters
     private String HDD;

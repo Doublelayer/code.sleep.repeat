@@ -1,11 +1,13 @@
+package observer;
+
 import java.util.ArrayList;
 import java.util.List;
 
 interface Subject {
 
-    void register(Observer obj);
+    public void register(Observer obj);
 
-    void unregister(Observer obj);
+    public void unregister(Observer obj);
 
     void notifyObservers();
 
@@ -44,4 +46,16 @@ class MyTopic implements Subject {
             observers.remove(obj);
         }
     }
+
+    @Override
+    public void notifyObservers() {
+
+    }
+
+    @Override
+    public Object getUpdate() {
+        return null;
+    }
+
+
 }
