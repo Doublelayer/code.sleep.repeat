@@ -14,7 +14,7 @@ use SebastianBergmann\Diff\ConfigurationException;
 use SebastianBergmann\Diff\Differ;
 
 /**
- * Strict Unified diff output builder.
+ * Strict Unified diff output creational_patterns.builder.
  *
  * Generates (strict) Unified diff's (unidiffs) with hunks.
  */

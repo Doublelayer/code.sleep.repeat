@@ -292,14 +292,14 @@ final class StrictUnifiedDiffOutputBuilderTest extends TestCase
 
     public function testEmptyDiff(): void
     {
-        $builder = new StrictUnifiedDiffOutputBuilder([
+        $creational_patterns.builder = new StrictUnifiedDiffOutputBuilder([
             'fromFile' => 'input.txt',
             'toFile'   => 'output.txt',
         ]);
 
         $this->assertSame(
             '',
-            $builder->getDiff([])
+            $creational_patterns.builder->getDiff([])
         );
     }
 

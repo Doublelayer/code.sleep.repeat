@@ -1,4 +1,4 @@
-package factory;
+package creational_patterns.factory;
 
 
 public class Server extends Computer{

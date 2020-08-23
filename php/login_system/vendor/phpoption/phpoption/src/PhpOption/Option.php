@@ -99,7 +99,7 @@ abstract class Option implements IteratorAggregate
     }
 
     /**
-     * Option factory, which creates new option based on passed value.
+     * Option creational_patterns.factory, which creates new option based on passed value.
      * If value is already an option, it simply returns
      * If value is a \Closure, LazyOption with passed callback created and returned. If Option returned from callback,
      * it returns directly (flatMap-like behaviour)

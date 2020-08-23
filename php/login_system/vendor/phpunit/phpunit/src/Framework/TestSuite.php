@@ -487,7 +487,7 @@ class TestSuite implements Test, SelfDescribing, IteratorAggregate
         }
 
         if (!\is_object($testClass)) {
-            throw InvalidArgumentHelper::factory(
+            throw InvalidArgumentHelper::creational_patterns.factory(
                 1,
                 'class name or object'
             );
@@ -615,7 +615,7 @@ class TestSuite implements Test, SelfDescribing, IteratorAggregate
     {
         if (!(\is_array($fileNames) ||
             (\is_object($fileNames) && $fileNames instanceof Iterator))) {
-            throw InvalidArgumentHelper::factory(
+            throw InvalidArgumentHelper::creational_patterns.factory(
                 1,
                 'array or iterator'
             );
@@ -877,7 +877,7 @@ class TestSuite implements Test, SelfDescribing, IteratorAggregate
         $iterator = new TestSuiteIterator($this);
 
         if ($this->iteratorFilter !== null) {
-            $iterator = $this->iteratorFilter->factory($iterator, $this);
+            $iterator = $this->iteratorFilter->creational_patterns.factory($iterator, $this);
         }
 
         return $iterator;

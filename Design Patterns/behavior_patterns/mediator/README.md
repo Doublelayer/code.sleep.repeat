@@ -7,4 +7,4 @@
         - ermöglicht das Aktionen der einzelnen Objektgruppen unabhängig voneinander variieren
 ```
 
-![mediator-pattern](mediator-pattern.png)
+![behavior_patterns.mediator-pattern](mediator-pattern.png)

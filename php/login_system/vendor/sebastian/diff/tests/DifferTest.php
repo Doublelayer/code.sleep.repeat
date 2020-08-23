@@ -429,7 +429,7 @@ EOF
     public function testConstructorInvalidArgInt(): void
     {
         $this->expectException(InvalidArgumentException::class);
-        $this->expectExceptionMessageRegExp('/^Expected builder to be an instance of DiffOutputBuilderInterface, <null> or a string, got integer "1"\.$/');
+        $this->expectExceptionMessageRegExp('/^Expected creational_patterns.builder to be an instance of DiffOutputBuilderInterface, <null> or a string, got integer "1"\.$/');
 
         new Differ(1);
     }
@@ -437,7 +437,7 @@ EOF
     public function testConstructorInvalidArgObject(): void
     {
         $this->expectException(InvalidArgumentException::class);
-        $this->expectExceptionMessageRegExp('/^Expected builder to be an instance of DiffOutputBuilderInterface, <null> or a string, got instance of "SplFileInfo"\.$/');
+        $this->expectExceptionMessageRegExp('/^Expected creational_patterns.builder to be an instance of DiffOutputBuilderInterface, <null> or a string, got instance of "SplFileInfo"\.$/');
 
         new Differ(new \SplFileInfo(__FILE__));
     }

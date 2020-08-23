@@ -24,17 +24,17 @@ class FactoryTest extends TestCase
     /**
      * @var Factory
      */
-    private $factory;
+    private $creational_patterns.factory;
 
     protected function setUp(): void
     {
         $this->root    = __DIR__;
-        $this->factory = new Factory;
+        $this->creational_patterns.factory = new Factory;
     }
 
     public function testFindFilesInTestDirectory(): void
     {
-        $iterator = $this->factory->getFileIterator($this->root, 'Test.php');
+        $iterator = $this->creational_patterns.factory->getFileIterator($this->root, 'Test.php');
         $files    = \iterator_to_array($iterator);
 
         $this->assertGreaterThanOrEqual(1, \count($files));
@@ -42,7 +42,7 @@ class FactoryTest extends TestCase
 
     public function testFindFilesWithExcludedNonExistingSubdirectory(): void
     {
-        $iterator = $this->factory->getFileIterator($this->root, 'Test.php', '', [$this->root . '/nonExistingDir']);
+        $iterator = $this->creational_patterns.factory->getFileIterator($this->root, 'Test.php', '', [$this->root . '/nonExistingDir']);
         $files    = \iterator_to_array($iterator);
 
         $this->assertGreaterThanOrEqual(1, \count($files));

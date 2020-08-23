@@ -72,8 +72,8 @@ final class FactoryTest extends TestCase
      */
     public function testGetComparatorFor($a, $b, $expected): void
     {
-        $factory = new Factory;
-        $actual  = $factory->getComparatorFor($a, $b);
+        $creational_patterns.factory = new Factory;
+        $actual  = $creational_patterns.factory->getComparatorFor($a, $b);
         $this->assertInstanceOf($expected, $actual);
     }
 
@@ -81,15 +81,15 @@ final class FactoryTest extends TestCase
     {
         $comparator = new TestClassComparator;
 
-        $factory = new Factory;
-        $factory->register($comparator);
+        $creational_patterns.factory = new Factory;
+        $creational_patterns.factory->register($comparator);
 
         $a        = new TestClass;
         $b        = new TestClass;
         $expected = 'SebastianBergmann\\Comparator\\TestClassComparator';
-        $actual   = $factory->getComparatorFor($a, $b);
+        $actual   = $creational_patterns.factory->getComparatorFor($a, $b);
 
-        $factory->unregister($comparator);
+        $creational_patterns.factory->unregister($comparator);
         $this->assertInstanceOf($expected, $actual);
     }
 
@@ -97,14 +97,14 @@ final class FactoryTest extends TestCase
     {
         $comparator = new TestClassComparator;
 
-        $factory = new Factory;
-        $factory->register($comparator);
-        $factory->unregister($comparator);
+        $creational_patterns.factory = new Factory;
+        $creational_patterns.factory->register($comparator);
+        $creational_patterns.factory->unregister($comparator);
 
         $a        = new TestClass;
         $b        = new TestClass;
         $expected = 'SebastianBergmann\\Comparator\\ObjectComparator';
-        $actual   = $factory->getComparatorFor($a, $b);
+        $actual   = $creational_patterns.factory->getComparatorFor($a, $b);
 
         $this->assertInstanceOf($expected, $actual);
     }

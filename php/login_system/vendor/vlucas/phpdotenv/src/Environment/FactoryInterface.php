@@ -3,7 +3,7 @@
 namespace Dotenv\Environment;
 
 /**
- * This environment factory interface.
+ * This environment creational_patterns.factory interface.
  *
  * If you need custom implementations of the variables interface, implement
  * this interface, and use your implementation in the loader.

@@ -121,20 +121,20 @@ final class Matcher implements MatcherInvocation
         }
 
         if ($this->afterMatchBuilderId !== null) {
-            $builder = $invocation->getObject()
+            $creational_patterns.builder = $invocation->getObject()
                                   ->__phpunit_getInvocationMocker()
                                   ->lookupId($this->afterMatchBuilderId);
 
-            if (!$builder) {
+            if (!$creational_patterns.builder) {
                 throw new RuntimeException(
                     \sprintf(
-                        'No builder found for match builder identification <%s>',
+                        'No creational_patterns.builder found for match creational_patterns.builder identification <%s>',
                         $this->afterMatchBuilderId
                     )
                 );
             }
 
-            $matcher = $builder->getMatcher();
+            $matcher = $creational_patterns.builder->getMatcher();
 
             if ($matcher && $matcher->invocationMatcher->hasBeenInvoked()) {
                 $this->afterMatchBuilderIsInvoked = true;
@@ -177,20 +177,20 @@ final class Matcher implements MatcherInvocation
     public function matches(Invocation $invocation)
     {
         if ($this->afterMatchBuilderId !== null) {
-            $builder = $invocation->getObject()
+            $creational_patterns.builder = $invocation->getObject()
                                   ->__phpunit_getInvocationMocker()
                                   ->lookupId($this->afterMatchBuilderId);
 
-            if (!$builder) {
+            if (!$creational_patterns.builder) {
                 throw new RuntimeException(
                     \sprintf(
-                        'No builder found for match builder identification <%s>',
+                        'No creational_patterns.builder found for match creational_patterns.builder identification <%s>',
                         $this->afterMatchBuilderId
                     )
                 );
             }
 
-            $matcher = $builder->getMatcher();
+            $matcher = $creational_patterns.builder->getMatcher();
 
             if (!$matcher) {
                 return false;

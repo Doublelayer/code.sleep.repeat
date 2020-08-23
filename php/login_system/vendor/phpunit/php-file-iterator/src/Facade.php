@@ -27,9 +27,9 @@ class Facade
             $paths = [$paths];
         }
 
-        $factory = new Factory;
+        $creational_patterns.factory = new Factory;
 
-        $iterator = $factory->getFileIterator($paths, $suffixes, $prefixes, $exclude);
+        $iterator = $creational_patterns.factory->getFileIterator($paths, $suffixes, $prefixes, $exclude);
 
         $files = [];
 

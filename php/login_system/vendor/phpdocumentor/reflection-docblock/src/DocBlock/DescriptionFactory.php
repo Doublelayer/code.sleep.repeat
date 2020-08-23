@@ -27,7 +27,7 @@ use phpDocumentor\Reflection\Types\Context as TypeContext;
  * 2. `{}` to escape the `}` character, this can be used if you want to use the `}` character in the description
  *    of an inline tag.
  *
- * If a body consists of multiple lines then this factory will also remove any superfluous whitespace at the beginning
+ * If a body consists of multiple lines then this creational_patterns.factory will also remove any superfluous whitespace at the beginning
  * of each line while maintaining any indentation that is used. This will prevent formatting parsers from tripping
  * over unexpected spaces as can be observed with tag descriptions.
  */
@@ -37,7 +37,7 @@ class DescriptionFactory
     private $tagFactory;
 
     /**
-     * Initializes this factory with the means to construct (inline) tags.
+     * Initializes this creational_patterns.factory with the means to construct (inline) tags.
      *
      * @param TagFactory $tagFactory
      */

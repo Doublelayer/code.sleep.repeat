@@ -19,7 +19,7 @@ abstract class Comparator
     /**
      * @var Factory
      */
-    protected $factory;
+    protected $creational_patterns.factory;
 
     /**
      * @var Exporter
@@ -31,9 +31,9 @@ abstract class Comparator
         $this->exporter = new Exporter;
     }
 
-    public function setFactory(Factory $factory)
+    public function setFactory(Factory $creational_patterns.factory)
     {
-        $this->factory = $factory;
+        $this->creational_patterns.factory = $creational_patterns.factory;
     }
 
     /**

@@ -27,7 +27,7 @@ final class DocBlockFactory implements DocBlockFactoryInterface
     private $tagFactory;
 
     /**
-     * Initializes this factory with the required subcontractors.
+     * Initializes this creational_patterns.factory with the required subcontractors.
      *
      * @param DescriptionFactory $descriptionFactory
      * @param TagFactory         $tagFactory

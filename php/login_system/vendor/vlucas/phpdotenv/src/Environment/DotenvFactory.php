@@ -9,7 +9,7 @@ use Dotenv\Environment\Adapter\PutenvAdapter;
 use Dotenv\Environment\Adapter\ServerConstAdapter;
 
 /**
- * The default implementation of the environment factory interface.
+ * The default implementation of the environment creational_patterns.factory interface.
  */
 class DotenvFactory implements FactoryInterface
 {
@@ -21,7 +21,7 @@ class DotenvFactory implements FactoryInterface
     protected $adapters;
 
     /**
-     * Create a new dotenv environment factory instance.
+     * Create a new dotenv environment creational_patterns.factory instance.
      *
      * If no adapters are provided, then the defaults will be used.
      *

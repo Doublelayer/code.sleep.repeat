@@ -15,21 +15,21 @@ namespace PHPUnit\Framework\MockObject\Builder;
 interface NamespaceMatch
 {
     /**
-     * Looks up the match builder with identification $id and returns it.
+     * Looks up the match creational_patterns.builder with identification $id and returns it.
      *
-     * @param string $id The identification of the match builder
+     * @param string $id The identification of the match creational_patterns.builder
      *
      * @return Match
      */
     public function lookupId($id);
 
     /**
-     * Registers the match builder $builder with the identification $id. The
-     * builder can later be looked up using lookupId() to figure out if it
+     * Registers the match creational_patterns.builder $creational_patterns.builder with the identification $id. The
+     * creational_patterns.builder can later be looked up using lookupId() to figure out if it
      * has been invoked.
      *
-     * @param string $id      The identification of the match builder
-     * @param Match  $builder The builder which is being registered
+     * @param string $id      The identification of the match creational_patterns.builder
+     * @param Match  $creational_patterns.builder The creational_patterns.builder which is being registered
      */
-    public function registerId($id, Match $builder);
+    public function registerId($id, Match $creational_patterns.builder);
 }

@@ -86,7 +86,7 @@ final class PhptTestCase implements Test, SelfDescribing
         }
 
         $this->filename = $filename;
-        $this->phpUtil  = $phpUtil ?: AbstractPhpProcess::factory();
+        $this->phpUtil  = $phpUtil ?: AbstractPhpProcess::creational_patterns.factory();
     }
 
     /**

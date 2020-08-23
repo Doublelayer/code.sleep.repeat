@@ -15,7 +15,7 @@ declare(strict_types=1);
 namespace phpDocumentor\Reflection;
 
 /**
- * Interface for project. Since the definition of a project can be different per factory this interface will be small.
+ * Interface for project. Since the definition of a project can be different per creational_patterns.factory this interface will be small.
  */
 interface Project
 {

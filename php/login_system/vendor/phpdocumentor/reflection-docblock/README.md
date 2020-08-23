@@ -21,13 +21,13 @@ Usage
 -----
 
 In order to parse the DocBlock one needs a DocBlockFactory that can be
-instantiated using its `createInstance` factory method like this:
+instantiated using its `createInstance` creational_patterns.factory method like this:
 
 ```php
-$factory  = \phpDocumentor\Reflection\DocBlockFactory::createInstance();
+$creational_patterns.factory  = \phpDocumentor\Reflection\DocBlockFactory::createInstance();
 ```
 
-Then we can use the `create` method of the factory to interpret the DocBlock. 
+Then we can use the `create` method of the creational_patterns.factory to interpret the DocBlock. 
 Please note that it is also possible to provide a class that has the 
 `getDocComment()` method, such as an object of type `ReflectionClass`, the
 create method will read that if it exists.
@@ -44,7 +44,7 @@ $docComment = <<<DOCCOMMENT
  */
 DOCCOMMENT;
 
-$docblock = $factory->create($docComment);
+$docblock = $creational_patterns.factory->create($docComment);
 ```
 
 The `create` method will yield an object of type `\phpDocumentor\Reflection\DocBlock`

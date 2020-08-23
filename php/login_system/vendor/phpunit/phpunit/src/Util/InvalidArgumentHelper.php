@@ -16,7 +16,7 @@ use PHPUnit\Framework\Exception;
  */
 final class InvalidArgumentHelper
 {
-    public static function factory(int $argument, string $type, $value = null): Exception
+    public static function creational_patterns.factory(int $argument, string $type, $value = null): Exception
     {
         $stack = \debug_backtrace();
 

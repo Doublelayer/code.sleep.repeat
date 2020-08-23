@@ -54,7 +54,7 @@ abstract class AbstractPhpProcess
      */
     protected $timeout = 0;
 
-    public static function factory(): self
+    public static function creational_patterns.factory(): self
     {
         if (\DIRECTORY_SEPARATOR === '\\') {
             return new WindowsPhpProcess;

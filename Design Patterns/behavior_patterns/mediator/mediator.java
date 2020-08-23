@@ -1,4 +1,4 @@
-package mediator;
+package behavior_patterns.mediator;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -59,7 +59,7 @@ class ChatMediatorImpl implements ChatMediator {
 
 /*
  * Users can send and receive messages. We use an abstract class. NOTICE: User
- * has a reference to the mediator object. Its requierd fot the communication
+ * has a reference to the behavior_patterns.mediator object. Its requierd fot the communication
  * between different users
  */
 abstract class User {

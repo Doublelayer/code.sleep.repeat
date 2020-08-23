@@ -26,7 +26,7 @@ class Loader
     protected $filePaths;
 
     /**
-     * The environment factory instance.
+     * The environment creational_patterns.factory instance.
      *
      * @var \Dotenv\Environment\FactoryInterface
      */

@@ -1,6 +1,4 @@
-package strategy;
-
-import java.util.Formatter;
+package behavior_patterns.strategy;
 
 public class CreditCardImpl implements IPaymentStrategy {
 

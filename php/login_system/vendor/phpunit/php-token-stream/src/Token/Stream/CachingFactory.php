@@ -9,7 +9,7 @@
  */
 
 /**
- * A caching factory for token stream objects.
+ * A caching creational_patterns.factory for token stream objects.
  */
 class PHP_Token_Stream_CachingFactory
 {

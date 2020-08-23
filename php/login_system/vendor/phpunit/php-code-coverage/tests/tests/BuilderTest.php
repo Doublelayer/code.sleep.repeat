@@ -14,11 +14,11 @@ use SebastianBergmann\CodeCoverage\TestCase;
 
 class BuilderTest extends TestCase
 {
-    protected $factory;
+    protected $creational_patterns.factory;
 
     protected function setUp(): void
     {
-        $this->factory = new Builder;
+        $this->creational_patterns.factory = new Builder;
     }
 
     public function testSomething(): void
@@ -165,7 +165,7 @@ class BuilderTest extends TestCase
                 ],
             ],
             $method->invoke(
-                $this->factory,
+                $this->creational_patterns.factory,
                 [
                     "src{$s}Money.php"                    => [],
                     "src{$s}MoneyBag.php"                 => [],
@@ -187,7 +187,7 @@ class BuilderTest extends TestCase
 
         $method->setAccessible(true);
 
-        $_commonPath = $method->invokeArgs($this->factory, [&$paths]);
+        $_commonPath = $method->invokeArgs($this->creational_patterns.factory, [&$paths]);
 
         $this->assertEquals($reducedPaths, $paths);
         $this->assertEquals($commonPath, $_commonPath);

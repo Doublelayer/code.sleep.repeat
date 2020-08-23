@@ -181,7 +181,7 @@ final class StrictUnifiedDiffOutputBuilderIntegrationTest extends TestCase
     }
 
     /**
-     * Compare diff create by builder and against one create by `diff` command.
+     * Compare diff create by creational_patterns.builder and against one create by `diff` command.
      *
      * @param string $diff
      * @param string $from

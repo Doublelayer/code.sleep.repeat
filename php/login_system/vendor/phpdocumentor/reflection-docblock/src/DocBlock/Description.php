@@ -28,7 +28,7 @@ use Webmozart\Assert\Assert;
  *
  *     $description = $descriptionFactory->create('This is a {@see Description}', $context);
  *
- * The description factory will interpret the given body and create a body template and list of tags from them, and pass
+ * The description creational_patterns.factory will interpret the given body and create a body template and list of tags from them, and pass
  * that onto the constructor if this class.
  *
  * > The $context variable is a class of type {@see \phpDocumentor\Reflection\Types\Context} and contains the namespace

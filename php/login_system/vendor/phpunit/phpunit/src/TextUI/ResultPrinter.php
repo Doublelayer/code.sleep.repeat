@@ -126,14 +126,14 @@ class ResultPrinter extends Printer implements TestListener
         parent::__construct($out);
 
         if (!\in_array($colors, self::AVAILABLE_COLORS, true)) {
-            throw InvalidArgumentHelper::factory(
+            throw InvalidArgumentHelper::creational_patterns.factory(
                 3,
                 \vsprintf('value from "%s", "%s" or "%s"', self::AVAILABLE_COLORS)
             );
         }
 
         if (!\is_int($numberOfColumns) && $numberOfColumns !== 'max') {
-            throw InvalidArgumentHelper::factory(5, 'integer or "max"');
+            throw InvalidArgumentHelper::creational_patterns.factory(5, 'integer or "max"');
         }
 
         $console            = new Console;

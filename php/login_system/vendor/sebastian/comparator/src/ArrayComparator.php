@@ -67,7 +67,7 @@ class ArrayComparator extends Comparator
             }
 
             try {
-                $comparator = $this->factory->getComparatorFor($value, $actual[$key]);
+                $comparator = $this->creational_patterns.factory->getComparatorFor($value, $actual[$key]);
                 $comparator->assertEquals($value, $actual[$key], $delta, $canonicalize, $ignoreCase, $processed);
 
                 $expectedAsString .= \sprintf(

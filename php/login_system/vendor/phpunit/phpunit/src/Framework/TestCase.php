@@ -791,7 +791,7 @@ abstract class TestCase extends Assert implements Test, SelfDescribing
                 $var
             );
 
-            $php = AbstractPhpProcess::factory();
+            $php = AbstractPhpProcess::creational_patterns.factory();
             $php->runTestJob($template->render(), $this, $result);
         } else {
             $result->run($this);
@@ -1048,7 +1048,7 @@ abstract class TestCase extends Assert implements Test, SelfDescribing
     }
 
     /**
-     * Returns a builder object to create mock objects using a fluent interface.
+     * Returns a creational_patterns.builder object to create mock objects using a fluent interface.
      *
      * @param string|string[] $className
      */
@@ -2080,10 +2080,10 @@ abstract class TestCase extends Assert implements Test, SelfDescribing
 
     private function unregisterCustomComparators(): void
     {
-        $factory = ComparatorFactory::getInstance();
+        $creational_patterns.factory = ComparatorFactory::getInstance();
 
         foreach ($this->customComparators as $comparator) {
-            $factory->unregister($comparator);
+            $creational_patterns.factory->unregister($comparator);
         }
 
         $this->customComparators = [];

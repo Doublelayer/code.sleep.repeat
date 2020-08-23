@@ -42,7 +42,7 @@ final class Factory
         $this->filters[] = [$filter, $args];
     }
 
-    public function factory(Iterator $iterator, TestSuite $suite): FilterIterator
+    public function creational_patterns.factory(Iterator $iterator, TestSuite $suite): FilterIterator
     {
         foreach ($this->filters as $filter) {
             [$class, $args] = $filter;

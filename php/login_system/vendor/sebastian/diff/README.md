@@ -39,7 +39,7 @@ There are three output builders available in this package:
 
 #### UnifiedDiffOutputBuilder 
 
-This is default builder, which generates the output close to udiff and is used by PHPUnit.
+This is default creational_patterns.builder, which generates the output close to udiff and is used by PHPUnit.
 
 ```php
 <?php
@@ -47,12 +47,12 @@ This is default builder, which generates the output close to udiff and is used b
 use SebastianBergmann\Diff\Differ;
 use SebastianBergmann\Diff\Output\UnifiedDiffOutputBuilder;
 
-$builder = new UnifiedDiffOutputBuilder(
+$creational_patterns.builder = new UnifiedDiffOutputBuilder(
     "--- Original\n+++ New\n", // custom header
     false                      // do not add line numbers to the diff 
 );
 
-$differ = new Differ($builder);
+$differ = new Differ($creational_patterns.builder);
 print $differ->diff('foo', 'bar');
 ```
 
@@ -67,7 +67,7 @@ similar to `diff -u` and compatible with `patch` and `git apply`.
 use SebastianBergmann\Diff\Differ;
 use SebastianBergmann\Diff\Output\StrictUnifiedDiffOutputBuilder;
 
-$builder = new StrictUnifiedDiffOutputBuilder([
+$creational_patterns.builder = new StrictUnifiedDiffOutputBuilder([
     'collapseRanges'      => true, // ranges of length one are rendered with the trailing `,1`
     'commonLineThreshold' => 6,    // number of same lines before ending a new hunk and creating a new one (if needed)
     'contextLines'        => 3,    // like `diff:  -u, -U NUM, --unified[=NUM]`, for patch/git apply compatibility best to keep at least @ 3
@@ -77,7 +77,7 @@ $builder = new StrictUnifiedDiffOutputBuilder([
     'toFileDate'          => null,
 ]);
 
-$differ = new Differ($builder);
+$differ = new Differ($creational_patterns.builder);
 print $differ->diff('foo', 'bar');
 ```
 
@@ -91,17 +91,17 @@ Output only the lines that differ.
 use SebastianBergmann\Diff\Differ;
 use SebastianBergmann\Diff\Output\DiffOnlyOutputBuilder;
 
-$builder = new DiffOnlyOutputBuilder(
+$creational_patterns.builder = new DiffOnlyOutputBuilder(
     "--- Original\n+++ New\n"
 );
 
-$differ = new Differ($builder);
+$differ = new Differ($creational_patterns.builder);
 print $differ->diff('foo', 'bar');
 ```
 
 #### DiffOutputBuilderInterface
 
-You can pass any output builder to the `Differ` class as longs as it implements the `DiffOutputBuilderInterface`. 
+You can pass any output creational_patterns.builder to the `Differ` class as longs as it implements the `DiffOutputBuilderInterface`. 
 
 #### Parsing diff
 

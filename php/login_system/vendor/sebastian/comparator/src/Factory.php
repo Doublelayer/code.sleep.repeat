@@ -42,7 +42,7 @@ class Factory
     }
 
     /**
-     * Constructs a new factory.
+     * Constructs a new creational_patterns.factory.
      */
     public function __construct()
     {

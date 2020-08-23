@@ -15,7 +15,7 @@ declare(strict_types=1);
 namespace phpDocumentor\Reflection;
 
 /**
- * Interface for project factories. A project factory shall convert a set of files
+ * Interface for project factories. A project creational_patterns.factory shall convert a set of files
  * into an object implementing the Project interface.
  */
 interface ProjectFactory

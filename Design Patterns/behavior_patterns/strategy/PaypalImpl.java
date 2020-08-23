@@ -1,4 +1,4 @@
-package strategy;
+package behavior_patterns.strategy;
 
 public class PaypalImpl implements IPaymentStrategy {
 

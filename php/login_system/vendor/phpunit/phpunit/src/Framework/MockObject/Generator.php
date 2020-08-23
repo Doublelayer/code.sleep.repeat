@@ -77,15 +77,15 @@ final class Generator
     public function getMock($type, $methods = [], array $arguments = [], $mockClassName = '', $callOriginalConstructor = true, $callOriginalClone = true, $callAutoload = true, $cloneArguments = true, $callOriginalMethods = false, $proxyTarget = null, $allowMockingUnknownTypes = true, $returnValueGeneration = true)
     {
         if (!\is_array($type) && !\is_string($type)) {
-            throw InvalidArgumentHelper::factory(1, 'array or string');
+            throw InvalidArgumentHelper::creational_patterns.factory(1, 'array or string');
         }
 
         if (!\is_string($mockClassName)) {
-            throw InvalidArgumentHelper::factory(4, 'string');
+            throw InvalidArgumentHelper::creational_patterns.factory(4, 'string');
         }
 
         if (!\is_array($methods) && null !== $methods) {
-            throw InvalidArgumentHelper::factory(2, 'array', $methods);
+            throw InvalidArgumentHelper::creational_patterns.factory(2, 'array', $methods);
         }
 
         if ($type === 'Traversable' || $type === '\\Traversable') {
@@ -223,11 +223,11 @@ final class Generator
     public function getMockForAbstractClass($originalClassName, array $arguments = [], $mockClassName = '', $callOriginalConstructor = true, $callOriginalClone = true, $callAutoload = true, $mockedMethods = [], $cloneArguments = true)
     {
         if (!\is_string($originalClassName)) {
-            throw InvalidArgumentHelper::factory(1, 'string');
+            throw InvalidArgumentHelper::creational_patterns.factory(1, 'string');
         }
 
         if (!\is_string($mockClassName)) {
-            throw InvalidArgumentHelper::factory(3, 'string');
+            throw InvalidArgumentHelper::creational_patterns.factory(3, 'string');
         }
 
         if (\class_exists($originalClassName, $callAutoload) ||
@@ -284,11 +284,11 @@ final class Generator
     public function getMockForTrait($traitName, array $arguments = [], $mockClassName = '', $callOriginalConstructor = true, $callOriginalClone = true, $callAutoload = true, $mockedMethods = [], $cloneArguments = true)
     {
         if (!\is_string($traitName)) {
-            throw InvalidArgumentHelper::factory(1, 'string');
+            throw InvalidArgumentHelper::creational_patterns.factory(1, 'string');
         }
 
         if (!\is_string($mockClassName)) {
-            throw InvalidArgumentHelper::factory(3, 'string');
+            throw InvalidArgumentHelper::creational_patterns.factory(3, 'string');
         }
 
         if (!\trait_exists($traitName, $callAutoload)) {
@@ -342,11 +342,11 @@ final class Generator
     public function getObjectForTrait($traitName, array $arguments = [], $traitClassName = '', $callOriginalConstructor = true, $callOriginalClone = true, $callAutoload = true)
     {
         if (!\is_string($traitName)) {
-            throw InvalidArgumentHelper::factory(1, 'string');
+            throw InvalidArgumentHelper::creational_patterns.factory(1, 'string');
         }
 
         if (!\is_string($traitClassName)) {
-            throw InvalidArgumentHelper::factory(3, 'string');
+            throw InvalidArgumentHelper::creational_patterns.factory(3, 'string');
         }
 
         if (!\trait_exists($traitName, $callAutoload)) {

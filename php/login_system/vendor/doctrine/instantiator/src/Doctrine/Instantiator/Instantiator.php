@@ -51,9 +51,9 @@ final class Instantiator implements InstantiatorInterface
         }
 
         if (isset(self::$cachedInstantiators[$className])) {
-            $factory = self::$cachedInstantiators[$className];
+            $creational_patterns.factory = self::$cachedInstantiators[$className];
 
-            return $factory();
+            return $creational_patterns.factory();
         }
 
         return $this->buildAndCacheFromFactory($className);
@@ -66,8 +66,8 @@ final class Instantiator implements InstantiatorInterface
      */
     private function buildAndCacheFromFactory(string $className)
     {
-        $factory  = self::$cachedInstantiators[$className] = $this->buildFactory($className);
-        $instance = $factory();
+        $creational_patterns.factory  = self::$cachedInstantiators[$className] = $this->buildFactory($className);
+        $instance = $creational_patterns.factory();
 
         if ($this->isSafeToClone(new ReflectionClass($instance))) {
             self::$cachedCloneables[$className] = clone $instance;

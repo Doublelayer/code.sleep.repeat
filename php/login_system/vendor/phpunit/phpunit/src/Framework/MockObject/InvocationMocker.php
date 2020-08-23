@@ -78,15 +78,15 @@ final class InvocationMocker implements MatcherCollection, Invokable, NamespaceM
     /**
      * @throws RuntimeException
      */
-    public function registerId($id, Match $builder): void
+    public function registerId($id, Match $creational_patterns.builder): void
     {
         if (isset($this->builderMap[$id])) {
             throw new RuntimeException(
-                'Match builder with id <' . $id . '> is already registered.'
+                'Match creational_patterns.builder with id <' . $id . '> is already registered.'
             );
         }
 
-        $this->builderMap[$id] = $builder;
+        $this->builderMap[$id] = $creational_patterns.builder;
     }
 
     /**

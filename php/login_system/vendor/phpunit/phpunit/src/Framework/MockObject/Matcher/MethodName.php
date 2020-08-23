@@ -34,7 +34,7 @@ final class MethodName extends StatelessInvocation
     {
         if (!$constraint instanceof Constraint) {
             if (!\is_string($constraint)) {
-                throw InvalidArgumentHelper::factory(1, 'string');
+                throw InvalidArgumentHelper::creational_patterns.factory(1, 'string');
             }
 
             $constraint = new IsEqual(

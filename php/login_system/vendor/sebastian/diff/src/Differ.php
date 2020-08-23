@@ -48,7 +48,7 @@ final class Differ
         } else {
             throw new InvalidArgumentException(
                 \sprintf(
-                    'Expected builder to be an instance of DiffOutputBuilderInterface, <null> or a string, got %s.',
+                    'Expected creational_patterns.builder to be an instance of DiffOutputBuilderInterface, <null> or a string, got %s.',
                     \is_object($outputBuilder) ? 'instance of "' . \get_class($outputBuilder) . '"' : \gettype($outputBuilder) . ' "' . $outputBuilder . '"'
                 )
             );
